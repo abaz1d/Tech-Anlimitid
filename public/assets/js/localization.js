@@ -47,7 +47,7 @@ i18next
         translation: {
           banner1: {
             title: 'Selamat Datang di Anlimitid',
-            subtitle1: 'Rancang <em>PCB</em> atau Bangun <em>Situs Web</em> terbaik <span>Anda</span>.',
+            subtitle1: 'Rancang <em>PCB</em> atau Bangun <em>Aplikasi</em> terbaik <span>Anda</span>.',
             subtitle2: 'Kami adalah solusi Anda untuk desain PCB yang berkualitas dan terjangkau atau membangun situs web Anda.',
             orderNow: 'Pesan Sekarang',
           },
@@ -99,12 +99,27 @@ i18next
           },
 
           about: {
+            title: "Rancang <span>PCB Terbaik</span> Anda atau Bangun <em>Aplikasi</em> Anda Dengan Tech Anlimitid",
+            subtitle: "Tech Anlimitid adalah perusahaan penyedia layanan yang selalu memberikan layanan terbaik untuk pelanggannya di Indonesia.",
             transaction: "Transaksi",
             tokopedia: "Melayani lebih dari 2500 transaksi di Tokopedia",
             shopee: "Melayani lebih dari 3000 transaksi di Shopee",
             rating: "Peringkat",
             subrating: "Mendapatkan peringkat bintang 5 di Tokopedia dan Shopee."
-          }
+          },
+
+          portfolio: {
+            title: "<em>Proyek</em> &amp; Studi Kasus Terbaru Kami <span>Untuk Klien</span>",
+            subtitle: "PORTOFOLIO KAMI",
+            a1: "Tata Letak Atas Layar Sutra",
+            a2: "Rangkaian Komponen Raspberry Pi.",
+            b1: "Aplikasi Situs Web  Binatu",
+            b2: "Aplikasi situs Web Laundry, dibangun menggunakan React JS.",
+            c1: "Skema",
+            c2: "Skema Raspberry Pi.",
+            d1: "Aplikasi Seluler Binatu",
+            d2: "Aplikasi Seluler Batu, dibuat menggunakan React Native.",
+          },
 
         }
       },
@@ -112,7 +127,7 @@ i18next
         translation: {
           banner1: {
             title: 'Welcome to Anlimitid',
-            subtitle1: "Design <span>your</span> best <em>PCB</em> or build a <em>Website</em>.",
+            subtitle1: "Design <span>your</span> best <em>PCB</em> or build a <em>Applications</em>.",
             subtitle2: "We are your solution for quality and affordable PCB design or building your website.",
             orderNow: "Order Now"
           },
@@ -165,13 +180,28 @@ i18next
           },
 
           about: {
-            transaction: "Transaction",
+            title: "Design Your <span>Best PCB</span> or Build Your <em>Applications</em> With Tech Anlimitid",
+            subtitle: "Tech Anlimitid is a service provider company that always provides the best service for its customers in Indonesia.",
+            transaction: "Transactios",
             tokopedia: "Serving more than 2500 transactions on Tokopedia.",
             shopee: "Serving more than 3000 transactions on Shopee.",
             rating: "Ratings",
             subrating: "Get a 5-star rating on Tokopedia and Shopee."
 
-          }
+          },
+
+          portfolio: {
+            title: "Our Recent <em>Projects</em> &amp; Case Studies <span>for Clients</span>",
+            subtitle: "OUR PORTFOLIO",
+            a1: "Silkscreen Top Layout",
+            a2: "Raspberry Pi Component Suite.",
+            b1: "Laundry Website Application",
+            b2: "Laundry Website Application, built using React JS.",
+            c1: "Schematic",
+            c2: "Raspberry Pi Schematic.",
+            d1: "Laundry Mobile Application",
+            d2: "Laundry Mobile App, built using React Native.",
+          },
 
         }
       },
