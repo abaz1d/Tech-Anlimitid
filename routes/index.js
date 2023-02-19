@@ -4,7 +4,7 @@ var router = express.Router();
 module.exports = function () {
   router.get('/', function (req, res, next) {
     res.render('index', {
-      title: 'Anlimitid',
+      title: 'Tech Anlimitid',
     });
     console.log('i18next is ready...', req.body);
   });
