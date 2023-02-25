@@ -4,8 +4,19 @@ var router = express.Router();
 module.exports = function () {
   router.get('/', function (req, res, next) {
     res.render('index', {
-      title: 'Tech Anlimitid',
+      title: 'Anlimitid Tech',
     });
+    // send a ping approx every 2 seconds
+    var timer = setInterval(function () {
+      res.write('data: ping\n\n')
+
+      // !!! this is the important part
+      res.flush()
+    }, 2000)
+
+    res.on('close', function () {
+      clearInterval(timer)
+    })
     console.log('i18next is ready...', req.body);
   });
 

@@ -1,28 +1,10 @@
+var minifyHTML = require('express-minify-html');
+var compression = require('compression')
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-// var i18next = require('i18next');
-// var Backend = require('i18next-fs-backend');
-// var middleware = require('i18next-http-middleware');
-
-// i18next
-//   .use(Backend)
-//   .use(middleware.LanguageDetector)
-//   .init({
-//     // initImmediate: false,
-//     lng: 'en',
-//     fallbackLng: 'en',
-//     preload: ['en', 'id'],
-//     ns: ['translation'],
-//     defaultNS: 'translation',
-//     backend: {
-//       loadPath: 'locales/{{lng}}/{{ns}}.json'
-//     }
-//   });
-//   console.log('i18next is ready...')
-
 
 var indexRouter = require('./routes/index')();
 var usersRouter = require('./routes/users');
@@ -38,7 +20,19 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-// app.use(middleware.handle(i18next));
+app.use(compression());
+app.use(minifyHTML({
+  override: true,
+  exception_url: false,
+  htmlMinifier: {
+    removeComments: true,
+    collapseWhitespace: true,
+    collapseBooleanAttributes: true,
+    removeAttributeQuotes: true,
+    removeEmptyAttributes: true,
+    minifyJS: true
+  }
+}));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

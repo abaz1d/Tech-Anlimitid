@@ -5,11 +5,8 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <meta name="description" content="Official Website Anlimitid Tech">
+  <meta name="author" content="Abdul Aziz">
 
   <title>
     <%= title %>
@@ -17,8 +14,8 @@
   <link rel="icon" type="image/x-icon" href="assets/anlimitid.ico">
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" defer>
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css" defer>
 
 
   <!-- Additional CSS Files -->
@@ -28,6 +25,12 @@
   <style>
     a {
       color: inherit;
+    }
+
+    img {
+      width: 100%;
+      /* or max-width: 100%; */
+      height: auto;
     }
   </style>
 </head>
@@ -54,8 +57,8 @@
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img src="assets/images/logo.png">
+            <a href="index.html" class="logo" aria-label="logo">
+              <img src="assets/images/logo.png" alt="logo" height="50" width="50">
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
@@ -64,9 +67,8 @@
               <li class="scroll-to-section"><a href="#services" data-i18n="nav.services"><!--Services--></a></li>
               <li class="scroll-to-section"><a href="#about" data-i18n="nav.about"><!--About--></a></li>
               <li class="scroll-to-section"><a href="#portfolio" data-i18n="nav.portfolio"><!--Portfolio--></a></li>
-              <li class="scroll-to-section"><a href="#pricing" data-i18n="nav.pricing"><!--pricing--></a></li>
               <li class="scroll-to-section"><a href="#testimony" data-i18n="nav.testimony"><!--Videos--></a></li>
-
+              <li class="scroll-to-section"><a href="#pricing" data-i18n="nav.pricing"><!--pricing--></a></li>
               <li class="scroll-to-section" id="langMenu">
 
               </li>
@@ -76,7 +78,7 @@
               </li>
             </ul>
 
-            <a class='menu-trigger'>
+            <a href="javascript:;" class='menu-trigger'>
               <span>Menu</span>
             </a>
             <!-- ***** Menu End ***** -->
@@ -107,7 +109,9 @@
                       <a href="#pricing" data-i18n="banner1.orderNow"><!--Order Now--></a>
                     </div>
                     <div class="call-button">
-                      <a href="#"><i class="fa-solid fa-phone"></i> +62 896-8055-9020</a>
+                      <a
+                        href="https://api.whatsapp.com/send/?phone=%2B6289680559020&text=Saya+ingin+memesan+jasa+desain+pcb+atau+membuat+web,+bagaimana+cara+ordernya+?&type=phone_number&app_absent=0"><i
+                          class="fa-brands fa-whatsapp"></i> +62 896-8055-9020</a>
                     </div>
                   </div>
                 </div>
@@ -121,7 +125,9 @@
                       <a href="#services" data-i18n="banner2.ourServices"><!--Our Services--></a>
                     </div>
                     <div class="call-button">
-                      <a href="#"><i class="fa-solid fa-phone"></i> +62 896-8055-9020</a>
+                      <a
+                        href="https://api.whatsapp.com/send/?phone=%2B6289680559020&text=Saya+ingin+memesan+jasa+desain+pcb+atau+membuat+web,+bagaimana+cara+ordernya+?&type=phone_number&app_absent=0"><i
+                          class="fa-brands fa-whatsapp"></i> +62 896-8055-9020</a>
                     </div>
                   </div>
                 </div>
@@ -137,7 +143,9 @@
                       <a href="#portfolio" data-i18n="banner3.readMore"><!--Lihat Testimoni--></a>
                     </div>
                     <div class="call-button">
-                      <a href="#"><i class="fa-solid fa-phone"></i> +62 896-8055-9020</a>
+                      <a
+                        href="https://api.whatsapp.com/send/?phone=%2B6289680559020&text=Saya+ingin+memesan+jasa+desain+pcb+atau+membuat+web,+bagaimana+cara+ordernya+?&type=phone_number&app_absent=0"><i
+                          class="fa-brands fa-whatsapp"></i> +62 896-8055-9020</a>
                     </div>
                   </div>
                 </div>
@@ -151,11 +159,11 @@
 
   <div id="services" class="our-services section">
     <div class="services-right-dec">
-      <img src="assets/images/services-right-dec.png" alt="">
+      <img src="assets/images/services-right-dec.webp" alt="img">
     </div>
     <div class="container">
       <div class="services-left-dec">
-        <img src="assets/images/services-left-dec.png" alt="">
+        <img src="assets/images/services-left-dec.webp" alt="img">
       </div>
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
@@ -173,43 +181,43 @@
 
             <div class="item">
               <h4 data-i18n="[html]services.pcb1"><!-- Learn More about our Guidelines--></h4>
-              <div class="icon"><img src="assets/images/service-icon-05.png" loading="lazy" alt=""></div>
+              <div class="icon"><img src="assets/images/service-icon-05.webp" loading="lazy" alt="img" width="50" height="50"></div>
               <p data-i18n="[html]services.subpcb1"><!--Feel free to use this template for your business--></p>
             </div>
             <div class="item">
               <h4 data-i18n="[html]services.pcb2"><!--Develop The Best Strategy for Business--></h4>
-              <div class="icon"><img src="assets/images/service-icon-06.png" loading="lazy" alt=""></div>
+              <div class="icon"><img src="assets/images/service-icon-06.webp" loading="lazy" alt="img" width="50" height="50"></div>
               <p data-i18n="[html]services.subpcb2"><!--Get to know more about the topic in details--></p>
             </div>
             <div class="item">
               <h4 data-i18n="[html]services.pcb3"><!--UI / UX Design and Development--></h4>
-              <div class="icon"><img src="assets/images/service-icon-07.png" loading="lazy" alt=""></div>
+              <div class="icon"><img src="assets/images/service-icon-07.webp" loading="lazy" alt="img" width="50" height="50"></div>
               <p data-i18n="[html]services.subpcb3"><!--Get to know more about the topic in details--></p>
             </div>
             <div class="item">
               <h4 data-i18n="[html]services.pcb4"><!--Discover &amp; Explore our SEO Tips--></h4>
-              <div class="icon"><img src="assets/images/service-icon-08.png" loading="lazy" alt=""></div>
+              <div class="icon"><img src="assets/images/service-icon-08.webp" loading="lazy" alt="img" width="50" height="50"></div>
               <p data-i18n="[html]services.subpcb4"><!--Feel free to use this template for your business--></p>
             </div>
 
             <div class="item">
               <h4 data-i18n="[html]services.app1"><!--Optimizing your websites for Speed--></h4>
-              <div class="icon"><img src="assets/images/service-icon-01.png" loading="lazy" alt=""></div>
+              <div class="icon"><img src="assets/images/service-icon-01.webp" loading="lazy" alt="img" width="50" height="50"></div>
               <p data-i18n="[html]services.subapp1"><!--Get to know more about the topic in details--></p>
             </div>
             <div class="item">
               <h4 data-i18n="[html]services.app2"><!--See The Strategy In The Market--></h4>
-              <div class="icon"><img src="assets/images/service-icon-02.png" loading="lazy" alt=""></div>
+              <div class="icon"><img src="assets/images/service-icon-02.webp" loading="lazy" alt="img" width="50" height="50"></div>
               <p data-i18n="[html]services.subapp2"><!--Get to know more about the topic in details--></p>
             </div>
             <div class="item">
               <h4 data-i18n="[html]services.app3"><!--Best Content Ideas for your pages--></h4>
-              <div class="icon"><img src="assets/images/service-icon-03.png" loading="lazy" alt=""></div>
+              <div class="icon"><img src="assets/images/service-icon-03.webp" loading="lazy" alt="img" width="50" height="50"></div>
               <p data-i18n="[html]services.subapp3"><!--Feel free to use this template for your business--></p>
             </div>
             <div class="item">
               <h4 data-i18n="[html]services.app4"><!--Optimizing Speed for your web pages--></h4>
-              <div class="icon"><img src="assets/images/service-icon-04.png" loading="lazy" alt=""></div>
+              <div class="icon"><img src="assets/images/service-icon-04.webp" loading="lazy" alt="img" width="50" height="50"></div>
               <p data-i18n="[html]services.subapp4"><!--Get to know more about the topic in details--></p>
             </div>
 
@@ -224,7 +232,7 @@
       <div class="row">
         <div class="col-lg-6 align-self-center">
           <div class="left-image">
-            <img src="assets/images/about-left-image.png" alt="Two Girls working together">
+            <img src="assets/images/about-left-image.webp" alt="Two Girls working togetherr" width="656" height="545">
           </div>
         </div>
         <div class="col-lg-6">
@@ -235,15 +243,12 @@
             <p data-i18n="about.subtitle">
               <!-- You can browse free HTML templates on Too CSS website. Visit the website and explore latest website templates for your projects. -->
             </p>
-            <!-- <div class="main-blue-button-hover mt-3">
-              <a href="#contact" data-i18n="nav.contactNow"></a>
-            </div> -->
             <div class="row">
               <div class="col-lg-4">
                 <div class="fact-item">
                   <div class="count-area-content">
                     <div class="icon">
-                      <img src="assets/images/tokopedia.png" loading="lazy" alt="Tech Anlimitid">
+                      <img src="assets/images/tokopedia.svg" loading="lazy" alt="Tech Anlimitid" height="50" width="50">
                     </div>
                     <div class="count-digit">2500+</div>
                     <div class="count-title" data-i18n="about.transaction"><!--SEO Projects--></div>
@@ -255,7 +260,7 @@
                 <div class="fact-item">
                   <div class="count-area-content">
                     <div class="icon">
-                      <img src="assets/images/shopee.png" loading="lazy" alt="">
+                      <img src="assets/images/shopee.svg" loading="lazy" alt="img" height="50" width="50">
                     </div>
                     <div class="count-digit">4000+</div>
                     <div class="count-title" data-i18n="about.transaction"><!--Websites--></div>
@@ -269,8 +274,8 @@
                     <div class="icon">
                       <div class="count-title" data-i18n="about.rating"><!--Satisfied Clients--></div>
                     </div>
-                    <div class="count-digit mb-5"><img class="icon m-2" loading="lazy" src="assets/images/star.png"
-                        alt="">5<sub><sub>/<sub>5</sub></sub></sub></div>
+                    <div class="count-digit mb-5"><img class="icon m-2" loading="lazy" src="assets/images/star.webp"
+                        alt="img">5<sub><sub>/<sub>5</sub></sub></sub></div>
 
                     <p data-i18n="about.subrating"><!--Lorem ipsum dolor sitti amet, consectetur.--></p>
                   </div>
@@ -285,7 +290,7 @@
 
   <div id="portfolio" class="our-portfolio section">
     <div class="portfolio-left-dec">
-      <img src="assets/images/portfolio-left-dec.png" alt="">
+      <img src="assets/images/portfolio-left-dec.webp" alt="img">
     </div>
     <div class="container">
       <div class="row">
@@ -305,8 +310,8 @@
           <div class="owl-carousel owl-portfolio">
 
             <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-01.jpeg" loading="lazy" alt="">
+              <div class="thumb img-fluid">
+                <img src="assets/images/portfolio-01.svg" loading="lazy" alt="img" width="440" height="880">
                 <div class="hover-effect">
                   <div class="inner-content">
                     <a href="https://www.raspberrypi.org/">
@@ -318,8 +323,8 @@
               </div>
             </div>
             <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-04.jpeg" loading="lazy" alt="">
+              <div class="thumb img-fluid">
+                <img src="assets/images/portfolio-04.svg" loading="lazy" alt="img" width="440" height="880">
                 <div class="hover-effect">
                   <div class="inner-content">
                     <a rel="sponsored" href="https://github.com/abaz1d/Laundry-App" target="_parent">
@@ -331,8 +336,8 @@
               </div>
             </div>
             <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-02.jpeg" loading="lazy" alt="">
+              <div class="thumb img-fluid">
+                <img src="assets/images/portfolio-02.svg" loading="lazy" alt="img" width="440" height="880">
                 <div class="hover-effect">
                   <div class="inner-content">
                     <a href="https://github.com/abaz1d/Laundry-App">
@@ -344,8 +349,8 @@
               </div>
             </div>
             <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-05.jpeg" loading="lazy" alt="">
+              <div class="thumb img-fluid">
+                <img src="assets/images/portfolio-05.svg" loading="lazy" alt="img" width="440" height="880">
                 <div class="hover-effect">
                   <div class="inner-content">
                     <a href="https://github.com/abaz1d/Laundry-App">
@@ -358,8 +363,8 @@
             </div>
 
             <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-01.jpeg" loading="lazy" alt="">
+              <div class="thumb img-fluid">
+                <img src="assets/images/portfolio-01.svg" loading="lazy" alt="img" width="440" height="880">
                 <div class="hover-effect">
                   <div class="inner-content">
                     <a href="https://www.raspberrypi.org/">
@@ -371,8 +376,8 @@
               </div>
             </div>
             <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-04.jpeg" loading="lazy" alt="">
+              <div class="thumb img-fluid">
+                <img src="assets/images/portfolio-04.svg" loading="lazy" alt="img" width="440" height="880">
                 <div class="hover-effect">
                   <div class="inner-content">
                     <a rel="sponsored" href="https://github.com/abaz1d/Laundry-App" target="_parent">
@@ -384,8 +389,8 @@
               </div>
             </div>
             <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-02.jpeg" loading="lazy" alt="">
+              <div class="thumb img-fluid">
+                <img src="assets/images/portfolio-02.svg" loading="lazy" alt="img" width="440" height="880">
                 <div class="hover-effect">
                   <div class="inner-content">
                     <a href="https://github.com/abaz1d/Laundry-App">
@@ -397,8 +402,8 @@
               </div>
             </div>
             <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-05.jpeg" loading="lazy" alt="">
+              <div class="thumb img-fluid">
+                <img src="assets/images/portfolio-05.svg" loading="lazy" alt="img" width="440" height="880">
                 <div class="hover-effect">
                   <div class="inner-content">
                     <a href="https://github.com/abaz1d/Laundry-App">
@@ -411,8 +416,8 @@
             </div>
 
             <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-01.jpeg" loading="lazy" alt="">
+              <div class="thumb img-fluid">
+                <img src="assets/images/portfolio-01.svg" loading="lazy" alt="img" width="440" height="880">
                 <div class="hover-effect">
                   <div class="inner-content">
                     <a href="https://www.raspberrypi.org/">
@@ -424,8 +429,8 @@
               </div>
             </div>
             <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-04.jpeg" loading="lazy" alt="">
+              <div class="thumb img-fluid">
+                <img src="assets/images/portfolio-04.svg" loading="lazy" alt="img" width="440" height="880">
                 <div class="hover-effect">
                   <div class="inner-content">
                     <a rel="sponsored" href="https://github.com/abaz1d/Laundry-App" target="_parent">
@@ -437,8 +442,8 @@
               </div>
             </div>
             <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-02.jpeg" loading="lazy" alt="">
+              <div class="thumb img-fluid">
+                <img src="assets/images/portfolio-02.svg" loading="lazy" alt="img" width="440" height="880">
                 <div class="hover-effect">
                   <div class="inner-content">
                     <a href="https://github.com/abaz1d/Laundry-App">
@@ -450,8 +455,8 @@
               </div>
             </div>
             <div class="item">
-              <div class="thumb">
-                <img src="assets/images/portfolio-05.jpeg" loading="lazy" alt="">
+              <div class="thumb img-fluid">
+                <img src="assets/images/portfolio-05.svg" loading="lazy" alt="img" width="440" height="880">
                 <div class="hover-effect">
                   <div class="inner-content">
                     <a href="https://github.com/abaz1d/Laundry-App">
@@ -464,142 +469,19 @@
             </div>
 
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="testimoni" class="our-services section">
-    <div class="services-right-dec">
-      <img src="assets/images/services-right-dec.png" alt="">
-    </div>
-    <div class="container">
-      <div class="services-left-dec">
-        <img src="assets/images/services-left-dec.png" alt="">
-      </div>
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h2 data-i18n="[html]services.title">
-              <!-- We <em>Provide</em> The Best Service With <span>Our Tools</span>-->
-            </h2>
-            <span data-i18n="services.subtitle"><!--Our Services--></span>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="owl-carousel owl-services">
-
-            <div class="item">
-              <h4 data-i18n="[html]services.pcb1"><!-- Learn More about our Guidelines--></h4>
-              <div class="icon"><img src="assets/images/service-icon-05.png" loading="lazy" alt=""></div>
-              <p data-i18n="[html]services.subpcb1"><!--Feel free to use this template for your business--></p>
-            </div>
-            <div class="item">
-              <h4 data-i18n="[html]services.pcb2"><!--Develop The Best Strategy for Business--></h4>
-              <div class="icon"><img src="assets/images/service-icon-06.png" loading="lazy" alt=""></div>
-              <p data-i18n="[html]services.subpcb2"><!--Get to know more about the topic in details--></p>
-            </div>
-            <div class="item">
-              <h4 data-i18n="[html]services.pcb3"><!--UI / UX Design and Development--></h4>
-              <div class="icon"><img src="assets/images/service-icon-07.png" loading="lazy" alt=""></div>
-              <p data-i18n="[html]services.subpcb3"><!--Get to know more about the topic in details--></p>
-            </div>
-            <div class="item">
-              <h4 data-i18n="[html]services.pcb4"><!--Discover &amp; Explore our SEO Tips--></h4>
-              <div class="icon"><img src="assets/images/service-icon-08.png" loading="lazy" alt=""></div>
-              <p data-i18n="[html]services.subpcb4"><!--Feel free to use this template for your business--></p>
-            </div>
-
-            <div class="item">
-              <h4 data-i18n="[html]services.app1"><!--Optimizing your websites for Speed--></h4>
-              <div class="icon"><img src="assets/images/service-icon-01.png" loading="lazy" alt=""></div>
-              <p data-i18n="[html]services.subapp1"><!--Get to know more about the topic in details--></p>
-            </div>
-            <div class="item">
-              <h4 data-i18n="[html]services.app2"><!--See The Strategy In The Market--></h4>
-              <div class="icon"><img src="assets/images/service-icon-02.png" loading="lazy" alt=""></div>
-              <p data-i18n="[html]services.subapp2"><!--Get to know more about the topic in details--></p>
-            </div>
-            <div class="item">
-              <h4 data-i18n="[html]services.app3"><!--Best Content Ideas for your pages--></h4>
-              <div class="icon"><img src="assets/images/service-icon-03.png" loading="lazy" alt=""></div>
-              <p data-i18n="[html]services.subapp3"><!--Feel free to use this template for your business--></p>
-            </div>
-            <div class="item">
-              <h4 data-i18n="[html]services.app4"><!--Optimizing Speed for your web pages--></h4>
-              <div class="icon"><img src="assets/images/service-icon-04.png" loading="lazy" alt=""></div>
-              <p data-i18n="[html]services.subapp4"><!--Get to know more about the topic in details--></p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="pricing" class="pricing-tables">
-    <div class="tables-left-dec">
-      <img src="assets/images/tables-left-dec.png" alt="">
-    </div>
-    <div class="tables-right-dec">
-      <img src="assets/images/tables-right-dec.png" alt="">
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h2 data-i18n="[html]price.title">
-              <!-- Select a suitable <em>plan</em> for your next <span>projects</span>-->
-            </h2>
-            <span data-i18n="price.subtitle"><!--Our Plans--></span>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-1">
-        </div>
-        <div class="col-lg-5">
-          <div class="item second-item">
-            <h4 data-i18n="price.pcb1"><!-- Standard Plan --></h4>
-            <li data-i18n="price.start"></li>
-            <em data-i18n="[html]price.pcb2"> <!-- $240/mo --></em>
-            <span data-i18n="[html]price.pcb3"><!-- $200 --></span>
-            <ul data-i18n="[html]price.pcb4">
-            </ul>
-            <div class="main-blue-button-hover">
-              <a data-i18n="price.beli" href="#"><!--Buy Now--></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="item third-item">
-            <h4 data-i18n="price.app1"><!-- Advanced Plan --></h4>
-            <li data-i18n="price.start"></li>
-            <em data-i18n="[html]price.app2"><!-- $360/mo --></em>
-            <span data-i18n="[html]price.app3"><!-- $280 --></span>
-            <ul data-i18n="[html]price.app4">
-            </ul>
-            <div class="main-blue-button-hover">
-              <a data-i18n="price.beli" href="#"><!--Buy Now--></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-1">
         </div>
       </div>
     </div>
   </div>
 
   <div id="testimony" class="our-videos section">
-    <div class="subscribe" style="margin-bottom: -40px;">
+    <div class="subscribe" style="margin-bottom: -30px;">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="inner-content">
               <div class="row">
-                <div class="col-lg-10 offset-lg-1" style="margin-bottom: -40px;">
+                <div class="col-lg-10 offset-lg-1" style="margin-bottom: -45px;">
                   <h2 data-i18n="testimoni.title"></h2>
                 </div>
               </div>
@@ -611,10 +493,10 @@
 
     <div class="our-videos section mb-5">
       <div class="videos-left-dec">
-        <img src="assets/images/videos-left-dec.png" alt="">
+        <img src="assets/images/videos-left-dec.webp" alt="img">
       </div>
       <div class="videos-right-dec">
-        <img src="assets/images/videos-right-dec.png" alt="">
+        <img src="assets/images/videos-right-dec.webp" alt="img">
       </div>
       <div class="container-fluid">
         <div class="row">
@@ -623,15 +505,16 @@
 
               <div class="item carousel slide text-center carousel-dark">
                 <div class="thumb">
-                  <img class="mx-auto rounded-circle shadow-1-strong mb-4"
+                  <img class="mx-auto rounded-circle shadow-1-strong mb-4 border" width="50" height="50"
                     src="https://cf.shopee.co.id/file/78748ef59b6d0d62e59f26af639d0c1e_tn" loading="lazy" alt="avatar"
                     style="width: 150px;" />
                   <div class="row d-flex justify-content-center">
                     <div class="col-lg-8">
                       <h5 class="mb-3">Whanes_store</h5>
-                      <p><img style="height: 50px; width: auto;" src="assets/images/shopee.png" loading="lazy"  alt="testimoni" class="mx-auto"></p>
+                      <p><img style="height: 50px; width: auto;" width="50" height="50" src="assets/images/shopee.svg"
+                          loading="lazy" alt="testimoni" class="mx-auto"></p>
                       <p class="text-muted" data-i18n="[html]testimoni.c1">
-                        
+
                       </p>
                     </div>
                   </div>
@@ -646,15 +529,16 @@
               </div>
               <div class="item carousel slide text-center carousel-dark">
                 <div class="thumb">
-                  <img class="mx-auto rounded-circle shadow-1-strong mb-4"
-                    src="https://images.tokopedia.net/img/cache/100-square/tPxBYm/2023/1/20/785ac6cb-d67b-42bd-97f8-6a06b9269130.jpg" alt="avatar" loading="lazy"
-                    style="width: 150px;" />
+                  <img class="mx-auto rounded-circle shadow-1-strong mb-4 border" width="50" height="50"
+                    src="https://images.tokopedia.net/img/cache/100-square/tPxBYm/2023/1/20/785ac6cb-d67b-42bd-97f8-6a06b9269130.jpg"
+                    alt="avatar" loading="lazy" style="width: 150px;" />
                   <div class="row d-flex justify-content-center">
                     <div class="col-lg-8">
                       <h5 class="mb-3">Hanna</h5>
-                      <p><img style="height: 50px; width: auto;" src="assets/images/tokopedia.png"  alt="testimoni" loading="lazy" class="mx-auto"></p>
+                      <p><img style="height: 50px; width: auto;" width="50" height="50"
+                          src="assets/images/tokopedia.svg" alt="testimoni" loading="lazy" class="mx-auto"></p>
                       <p class="text-muted" data-i18n="[html]testimoni.c4">
-                        
+
                       </p>
                     </div>
                   </div>
@@ -669,15 +553,16 @@
               </div>
               <div class="item carousel slide text-center carousel-dark">
                 <div class="thumb">
-                  <img class="mx-auto rounded-circle shadow-1-strong mb-4" loading="lazy"
+                  <img class="mx-auto rounded-circle shadow-1-strong mb-4" loading="lazy border" width="50" height="50"
                     src="https://cf.shopee.co.id/file/78c515de867bf79779a1e7bbbf470b3d_tn" alt="avatar"
                     style="width: 150px;" />
                   <div class="row d-flex justify-content-center">
                     <div class="col-lg-8">
                       <h5 class="mb-3">Gammaalthafiansyahr</h5>
-                      <p><img style="height: 50px; width: auto;" src="assets/images/shopee.png"  alt="testimoni" loading="lazy" class="mx-auto"></p>
+                      <p><img style="height: 50px; width: auto;" width="50" height="50" src="assets/images/shopee.svg"
+                          alt="testimoni" loading="lazy" class="mx-auto"></p>
                       <p class="text-muted" data-i18n="[html]testimoni.c2">
-                        
+
                       </p>
                     </div>
                   </div>
@@ -693,15 +578,16 @@
 
               <div class="item carousel slide text-center carousel-dark">
                 <div class="thumb">
-                  <img class="mx-auto rounded-circle shadow-1-strong mb-4" loading="lazy"
-                    src="https://images.tokopedia.net/img/cache/100-square/default_v3-usrnophoto.png.webp?ect=4g" alt="avatar"
-                    style="width: 150px;" />
+                  <img class="mx-auto rounded-circle shadow-1-strong mb-4" loading="lazy border" width="50" height="50"
+                    src="https://images.tokopedia.net/img/cache/100-square/default_v3-usrnophoto.png.webp?ect=4g"
+                    alt="avatar" style="width: 150px;" />
                   <div class="row d-flex justify-content-center">
                     <div class="col-lg-8">
                       <h5 class="mb-3">Goenawan</h5>
-                      <p><img style="height: 50px; width: auto;" src="assets/images/tokopedia.png" loading="lazy" alt="testimoni" class="mx-auto"></p>
+                      <p><img style="height: 50px; width: auto;" width="50" height="50"
+                          src="assets/images/tokopedia.svg" loading="lazy" alt="testimoni" class="mx-auto"></p>
                       <p class="text-muted" data-i18n="[html]testimoni.c3">
-                        
+
                       </p>
                     </div>
                   </div>
@@ -717,15 +603,16 @@
 
               <div class="item carousel slide text-center carousel-dark">
                 <div class="thumb">
-                  <img class="mx-auto rounded-circle shadow-1-strong mb-4" loading="lazy"
+                  <img class="mx-auto rounded-circle shadow-1-strong mb-4" loading="lazy border" width="50" height="50"
                     src="https://cf.shopee.co.id/file/bfa54f375fd39d2ceb75b0d442844e07_tn" alt="avatar"
                     style="width: 150px;" />
                   <div class="row d-flex justify-content-center">
                     <div class="col-lg-8">
                       <h5 class="mb-3">Whanes_store</h5>
-                      <p><img style="height: 50px; width: auto;" src="assets/images/shopee.png" loading="lazy" alt="testimoni" class="mx-auto"></p>
+                      <p><img style="height: 50px; width: auto;" width="50" height="50" src="assets/images/shopee.svg"
+                          loading="lazy" alt="testimoni" class="mx-auto"></p>
                       <p class="text-muted" data-i18n="[html]testimoni.c5">
-                        
+
                       </p>
                     </div>
                   </div>
@@ -741,15 +628,16 @@
 
               <div class="item carousel slide text-center carousel-dark">
                 <div class="thumb">
-                  <img class="mx-auto rounded-circle shadow-1-strong mb-4" loading="lazy"
-                    src="https://images.tokopedia.net/img/cache/100-square/default_picture_user/default_toped-15.jpg" alt="avatar"
-                    style="width: 150px;" />
+                  <img class="mx-auto rounded-circle shadow-1-strong mb-4" loading="lazy border" width="50" height="50"
+                    src="https://images.tokopedia.net/img/cache/100-square/default_picture_user/default_toped-15.jpg"
+                    alt="avatar" style="width: 150px;" />
                   <div class="row d-flex justify-content-center">
                     <div class="col-lg-8">
                       <h5 class="mb-3">Ahmad</h5>
-                      <p><img style="height: 50px; width: auto;" src="assets/images/tokopedia.png" loading="lazy"  alt="testimoni" class="mx-auto"></p>
+                      <p><img style="height: 50px; width: auto;" width="50" height="50"
+                          src="assets/images/tokopedia.svg" loading="lazy" alt="testimoni" class="mx-auto"></p>
                       <p class="text-muted" data-i18n="[html]testimoni.c6">
-                        
+
                       </p>
                     </div>
                   </div>
@@ -765,6 +653,58 @@
 
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pricing" class="pricing-tables">
+    <div class="tables-left-dec">
+      <img src="assets/images/tables-left-dec.webp" alt="img">
+    </div>
+    <div class="tables-right-dec">
+      <img src="assets/images/tables-right-dec.webp" alt="img">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h2 data-i18n="[html]price.title">
+            </h2>
+            <span data-i18n="price.subtitle"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-5">
+          <div class="item second-item">
+            <h4 data-i18n="price.pcb1"></h4>
+            <p data-i18n="price.start"></p>
+            <em data-i18n="[html]price.pcb2"></em>
+            <span data-i18n="[html]price.pcb3"></span>
+            <ul data-i18n="[html]price.pcb4">
+            </ul>
+            <div class="main-blue-button-hover">
+              <a data-i18n="price.beli" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="item third-item">
+            <h4 data-i18n="price.app1"></h4>
+            <p data-i18n="price.start"></p>
+            <em data-i18n="[html]price.app2"></em>
+            <span data-i18n="[html]price.app3"></span>
+            <ul data-i18n="[html]price.app4">
+            </ul>
+            <div class="main-blue-button-hover">
+              <a data-i18n="price.beli" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1">
         </div>
       </div>
     </div>
@@ -778,20 +718,17 @@
             <h2 data-i18n="[html]maps.title">
             </h2>
             <div id="map">
-              <iframe
+              <iframe title="maps"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.1751001481994!2d110.4791772!3d-6.988645600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708db2345047e7%3A0x73786fddf3aa2b5e!2sJasa%20Desain%20PCB!5e0!3m2!1sid!2sid!4v1676806765180!5m2!1sid!2sid"
                 width="100%" height="360px" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="info">
-              <a
-                href="https://api.whatsapp.com/send/?phone=%2B6289680559020&text=Saya+ingin+memesan+jasa+desain+pcb+atau+membuat+web,+bagaimana+cara+ordernya+?&type=phone_number&app_absent=0"><span><i
-                    class="fa-solid fa-phone" style="margin-right: -15px;"></i> <a
-                    href="https://api.whatsapp.com/send/?phone=%2B6289680559020&text=Saya+ingin+memesan+jasa+desain+pcb+atau+membuat+web,+bagaimana+cara+ordernya+?&type=phone_number&app_absent=0">WhatsApp<br>+62
-                    896-8055-9020</a></span></a>
-              <a href="mailto:anlimitidpcb@gmail.com"><span><i class="fa-solid fa-envelope"
-                    style="margin-right: -15px;"></i> <a
-                    href="mailto:anlimitidpcb@gmail.com">Email<br>anlimitidpcb@gmail.com</a></span></a>
+              <span><i class="fa-brands fa-whatsapp"></i> <a
+                  href="https://api.whatsapp.com/send/?phone=%2B6289680559020&text=Saya+ingin+memesan+jasa+desain+pcb+atau+membuat+web,+bagaimana+cara+ordernya+?&type=phone_number&app_absent=0"
+                  aria-label="wa">WhatsApp<br>+62 896-8055-9020</a></span>
+              <span><i class="fa-solid fa-envelope"></i> <a href="mailto:anlimitidpcb@gmail.com"
+                  aria-label="email">Email<br>anlimitidpcb@gmail.com</a></span>
             </div>
           </div>
         </div>
@@ -810,7 +747,7 @@
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email"
+                  <input type="text" name="email" id="email1" pattern="[^ @]*@[^ @]*" placeholder="Your Email"
                     required="">
                 </fieldset>
               </div>
@@ -821,7 +758,7 @@
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <button data-i18n="maps.send" type="submit" id="form-submit" class="main-button"></button>
+                  <button data-i18n="maps.send" type="submit" id="form-submit1" class="main-button"></button>
                 </fieldset>
               </div>
             </div>
@@ -830,15 +767,15 @@
       </div>
     </div>
     <div class="contact-dec">
-      <img src="assets/images/contact-dec.png" alt="">
+      <img src="assets/images/contact-dec.webp" alt="img">
     </div>
     <div class="contact-left-dec">
-      <img src="assets/images/contact-left-dec.png" alt="">
+      <img src="assets/images/contact-left-dec.webp" alt="img">
     </div>
   </div>
 
   <div class="footer-dec">
-    <img src="assets/images/footer-dec.png" alt="">
+    <img src="assets/images/footer-dec.webp" width="50" height="100" alt="img">
   </div>
 
   <footer>
@@ -847,17 +784,22 @@
         <div class="col-lg-3">
           <div class="about footer-item">
             <div class="logo">
-              <a href="mailto:anlimitidpcb@gmail.com"><img src="assets/images/logo.png" loading="lazy" alt="Tech Anlimitid"></a>
+              <a href="mailto:anlimitidpcb@gmail.com"><img src="assets/images/logo.png" loading="lazy" height="50" width="50"
+                  alt="Tech Anlimitid"></a>
             </div>
             <a href="mailto:anlimitidpcb@gmail.com">anlimitidpcb@gmail.com</a>
             <ul>
-              <li><a
+              <li><a aria-label="wa"
                   href="https://api.whatsapp.com/send/?phone=%2B6289680559020&text=Saya+ingin+memesan+jasa+desain+pcb+atau+membuat+web,+bagaimana+cara+ordernya+?&type=phone_number&app_absent=0"><i
                     class="fa-brands fa-whatsapp"></i></a></li>
-              <li><a href="mailto:anlimitidpcb@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
-              <li><a href="https://www.instagram.com/anlimitidpcb/"><i class="fa-brands fa-instagram"></i></a></li>
-              <li><a href="https://youtube.com/@nongkrongmasakini"><i class="fa-brands fa-youtube"></i></a></li>
-              <li><a href="https://maps.app.goo.gl/wkhwcmoFGHcy6KN89"><i class="fa-solid fa-location-dot"></i></a></li>
+              <li><a aria-label="email" href="mailto:anlimitidpcb@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+              </li>
+              <li><a aria-label="instagram" href="https://www.instagram.com/anlimitidpcb/"><i
+                    class="fa-brands fa-instagram"></i></a></li>
+              <li><a aria-label="youtube" href="https://youtube.com/@nongkrongmasakini"><i
+                    class="fa-brands fa-youtube"></i></a></li>
+              <li><a aria-label="maps" href="https://maps.app.goo.gl/wkhwcmoFGHcy6KN89"><i
+                    class="fa-solid fa-location-dot"></i></a></li>
             </ul>
           </div>
         </div>
@@ -886,8 +828,10 @@
             <p data-i18n="faq.subtitle"></p>
             <form action="mailto:anlimitidpcb@gmail.com" method="get">
               <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
-              <button type="submit" id="form-submit" class="main-button "><i
-                  class="fa-solid fa-paper-plane"></i></button>
+              <fieldset>
+                <button type="submit" id="form-submit2" name="form-submit2" class="main-button "><i
+                    class="fa-solid fa-paper-plane"></i><!--About--></button>
+              </fieldset>
             </form>
           </div>
         </div>
@@ -905,37 +849,16 @@
 
 
   <!-- Scripts -->
-  <script src="assets/js/i18next-jquery.min.js"></script>
-  <script src="assets/js/i18next.min.js"></script>
-  <script src="assets/js/i18nextBrowserLanguageDetector.min.js"></script>
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/animation.js"></script>
-  <script src="assets/js/imagesloaded.js"></script>
-  <script src="assets/js/custom.js"></script>
-  <script src="assets/js/localization.js"></script>
-  <script>
-
-    $(document).on("click", ".naccs .menu div", function () {
-      var numberIndex = $(this).index();
-
-      if (!$(this).is("active")) {
-        $(".naccs .menu div").removeClass("active");
-        $(".naccs ul li").removeClass("active");
-
-        $(this).addClass("active");
-        $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
-
-        var listItemHeight = $(".naccs ul")
-          .find("li:eq(" + numberIndex + ")")
-          .innerHeight();
-        $(".naccs ul").height(listItemHeight + "px");
-      }
-    });
-
-
-  </script>
+  <script src="assets/js/i18next-jquery.min.js" defer></script>
+  <script src="assets/js/i18next.min.js" defer></script>
+  <script src="assets/js/i18nextBrowserLanguageDetector.min.js" defer></script>
+  <script src="vendor/jquery/jquery.min.js" defer></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/js/owl-carousel.js" defer></script>
+  <script src="assets/js/animation.js" defer></script>
+  <script src="assets/js/imagesloaded.js" defer></script>
+  <script src="assets/js/custom.js" defer></script>
+  <script src="assets/js/localization.js" defer></script>
 </body>
 
 </html>
